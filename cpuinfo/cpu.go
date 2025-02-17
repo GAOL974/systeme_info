@@ -1,11 +1,10 @@
-package main
+package cpuinfo
 
 import (
 	"fmt"
 
 	"github.com/shirou/gopsutil/v3/cpu"
 )
-
 
 func GetCPUInfo() {
 	info, err := cpu.Info()

@@ -2,22 +2,23 @@ package main
 
 import (
 	"fmt"
+	"systeme_info/cpuinfo"
+	"systeme_info/diskinfo"
+	"systeme_info/memoryinfo"
+	"systeme_info/networkinfo"
+	"systeme_info/osinfo"
 )
 
 func main() {
-	fmt.Println("Récupération des informations système...\n")
+	fmt.Println("Récupération des informations système...")
 
-	GetOSInfo()
+	osinfo.GetOSInfo()
 
+	cpuinfo.GetCPUInfo()
 
-	GetCPUInfo()
+	memoryinfo.GetMemoryInfo()
 
+	diskinfo.GetDiskInfo()
 
-	GetMemoryInfo()
-
-
-	GetDiskInfo()
-
-	
-	GetNetworkInfo()
+	networkinfo.GetNetworkInfo()
 }

@@ -1,4 +1,4 @@
-package main
+package memoryinfo
 
 import (
 	"fmt"
